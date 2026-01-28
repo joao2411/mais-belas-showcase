@@ -12,7 +12,6 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
     alert("Mensagem enviada com sucesso! Entraremos em contato em breve.");
     setFormData({ name: "", email: "", phone: "", message: "" });
   };
@@ -181,7 +180,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-medium text-foreground mb-1">E-mail</h4>
                   <p className="text-muted-foreground text-sm">
-                    contato@maisbelas.com.br
+                    contato@bembelas.com.br
                   </p>
                 </div>
               </div>

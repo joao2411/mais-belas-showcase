@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
+import logo from "@/assets/logo-bem-belas.png";
 
 const Hero = () => {
   return (
@@ -29,8 +30,17 @@ const Hero = () => {
             </span>
           </div>
 
+          {/* Logo */}
+          <div className="mb-8 animate-fade-up" style={{ animationDelay: "0.05s" }}>
+            <img 
+              src={logo} 
+              alt="Bem Belas" 
+              className="h-24 md:h-32 w-auto"
+            />
+          </div>
+
           {/* Headline */}
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium text-foreground leading-tight mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+          <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium text-foreground leading-tight mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
             Realce sua{" "}
             <span className="text-primary">beleza natural</span>{" "}
             com cuidado especializado

@@ -37,7 +37,7 @@ const About = () => {
               Sua beleza é nossa <span className="text-primary">inspiração</span>
             </h2>
             <p className="text-muted-foreground text-lg mb-6">
-              A Mais Belas nasceu do sonho de proporcionar tratamentos estéticos
+              A Bem Belas nasceu do sonho de proporcionar tratamentos estéticos
               de excelência em um ambiente acolhedor e sofisticado. Acreditamos
               que cada pessoa é única e merece um cuidado personalizado.
             </p>

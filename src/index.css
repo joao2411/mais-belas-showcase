@@ -6,55 +6,56 @@
 
 @layer base {
   :root {
-    --background: 30 25% 97%;
-    --foreground: 25 20% 15%;
+    --background: 0 0% 100%;
+    --foreground: 330 10% 15%;
 
-    --card: 30 30% 98%;
-    --card-foreground: 25 20% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 330 10% 15%;
 
-    --popover: 30 30% 98%;
-    --popover-foreground: 25 20% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 330 10% 15%;
 
-    --primary: 350 45% 65%;
-    --primary-foreground: 30 25% 97%;
+    --primary: 330 100% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 30 20% 92%;
-    --secondary-foreground: 25 20% 25%;
+    --secondary: 330 30% 96%;
+    --secondary-foreground: 330 10% 20%;
 
-    --muted: 30 15% 90%;
-    --muted-foreground: 25 10% 45%;
+    --muted: 330 20% 94%;
+    --muted-foreground: 330 10% 45%;
 
-    --accent: 38 70% 55%;
-    --accent-foreground: 25 20% 15%;
+    --accent: 330 80% 60%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 30 20% 88%;
-    --input: 30 20% 88%;
-    --ring: 350 45% 65%;
+    --border: 330 20% 90%;
+    --input: 330 20% 90%;
+    --ring: 330 100% 50%;
 
     --radius: 0.75rem;
 
-    /* Custom tokens */
-    --rose-gold: 350 45% 65%;
-    --rose-gold-light: 350 35% 85%;
+    /* Custom tokens - Bem Belas Pink Neon */
+    --pink-neon: 330 100% 50%;
+    --pink-light: 330 80% 75%;
+    --pink-soft: 330 50% 95%;
     --gold: 38 70% 55%;
     --gold-light: 38 60% 75%;
-    --cream: 30 25% 97%;
-    --cream-dark: 30 20% 92%;
-    --charcoal: 25 20% 15%;
-    --warm-gray: 25 10% 45%;
+    --cream: 30 25% 98%;
+    --cream-dark: 330 15% 95%;
+    --charcoal: 330 10% 15%;
+    --warm-gray: 330 8% 45%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(350 45% 65% / 0.1), hsl(38 70% 55% / 0.1));
-    --gradient-gold: linear-gradient(135deg, hsl(38 70% 55%), hsl(38 60% 65%));
-    --gradient-rose: linear-gradient(135deg, hsl(350 45% 65%), hsl(350 35% 75%));
+    --gradient-hero: linear-gradient(135deg, hsl(330 100% 50% / 0.08), hsl(330 80% 60% / 0.05));
+    --gradient-pink: linear-gradient(135deg, hsl(330 100% 50%), hsl(330 80% 65%));
+    --gradient-rose: linear-gradient(135deg, hsl(330 100% 50%), hsl(330 60% 70%));
     
     /* Shadows */
-    --shadow-soft: 0 4px 20px -5px hsl(25 20% 15% / 0.08);
-    --shadow-card: 0 8px 30px -10px hsl(25 20% 15% / 0.1);
-    --shadow-elevated: 0 20px 50px -20px hsl(25 20% 15% / 0.15);
+    --shadow-soft: 0 4px 20px -5px hsl(330 100% 50% / 0.1);
+    --shadow-card: 0 8px 30px -10px hsl(330 100% 50% / 0.12);
+    --shadow-elevated: 0 20px 50px -20px hsl(330 100% 50% / 0.18);
 
     /* Typography */
     --font-serif: 'Cormorant Garamond', Georgia, serif;
@@ -71,42 +72,43 @@
   }
 
   .dark {
-    --background: 25 20% 10%;
-    --foreground: 30 25% 95%;
+    --background: 330 15% 8%;
+    --foreground: 330 10% 95%;
 
-    --card: 25 18% 14%;
-    --card-foreground: 30 25% 95%;
+    --card: 330 12% 12%;
+    --card-foreground: 330 10% 95%;
 
-    --popover: 25 18% 14%;
-    --popover-foreground: 30 25% 95%;
+    --popover: 330 12% 12%;
+    --popover-foreground: 330 10% 95%;
 
-    --primary: 350 45% 70%;
-    --primary-foreground: 25 20% 10%;
+    --primary: 330 100% 55%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 25 15% 20%;
-    --secondary-foreground: 30 25% 90%;
+    --secondary: 330 15% 18%;
+    --secondary-foreground: 330 10% 90%;
 
-    --muted: 25 15% 25%;
-    --muted-foreground: 30 15% 60%;
+    --muted: 330 12% 22%;
+    --muted-foreground: 330 10% 60%;
 
-    --accent: 38 65% 60%;
-    --accent-foreground: 25 20% 10%;
+    --accent: 330 80% 60%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 25 15% 22%;
-    --input: 25 15% 22%;
-    --ring: 350 45% 70%;
+    --border: 330 12% 20%;
+    --input: 330 12% 20%;
+    --ring: 330 100% 55%;
 
-    --rose-gold: 350 45% 70%;
-    --rose-gold-light: 350 35% 40%;
+    --pink-neon: 330 100% 55%;
+    --pink-light: 330 70% 45%;
+    --pink-soft: 330 20% 15%;
     --gold: 38 65% 60%;
     --gold-light: 38 55% 45%;
-    --cream: 25 20% 10%;
-    --cream-dark: 25 18% 14%;
-    --charcoal: 30 25% 95%;
-    --warm-gray: 30 15% 60%;
+    --cream: 330 15% 8%;
+    --cream-dark: 330 12% 12%;
+    --charcoal: 330 10% 95%;
+    --warm-gray: 330 10% 60%;
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -140,8 +142,8 @@
 }
 
 @layer components {
-  .text-gradient-gold {
-    background: var(--gradient-gold);
+  .text-gradient-pink {
+    background: var(--gradient-pink);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

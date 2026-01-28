@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoMonogram from "@/assets/logo-monogram.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,9 +34,14 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#inicio" className="flex items-center gap-2">
-            <span className="font-serif text-2xl md:text-3xl font-semibold text-foreground">
-              Mais <span className="text-primary">Belas</span>
+          <a href="#inicio" className="flex items-center gap-3">
+            <img 
+              src={logoMonogram} 
+              alt="Bem Belas" 
+              className="h-12 w-auto"
+            />
+            <span className="font-serif text-xl md:text-2xl font-semibold text-foreground tracking-wide">
+              BEM<span className="text-primary">✦</span>BELAS
             </span>
           </a>
 

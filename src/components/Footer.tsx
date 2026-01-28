@@ -1,4 +1,5 @@
 import { Instagram, Facebook, Phone, Mail, MapPin } from "lucide-react";
+import logoMonogram from "@/assets/logo-monogram.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,10 +11,17 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <span className="font-serif text-3xl font-semibold text-primary-foreground">
-              Mais <span className="text-primary">Belas</span>
-            </span>
-            <p className="mt-4 text-primary-foreground/70 text-sm leading-relaxed">
+            <div className="flex items-center gap-3 mb-4">
+              <img 
+                src={logoMonogram} 
+                alt="Bem Belas" 
+                className="h-10 w-auto brightness-0 invert"
+              />
+              <span className="font-serif text-2xl font-semibold text-primary-foreground tracking-wide">
+                BEM<span className="text-primary">✦</span>BELAS
+              </span>
+            </div>
+            <p className="text-primary-foreground/70 text-sm leading-relaxed">
               Sua beleza é nossa inspiração. Há mais de 10 anos transformando
               vidas através da estética avançada.
             </p>
@@ -99,7 +107,7 @@ const Footer = () => {
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
                 <span className="text-primary-foreground/70 text-sm">
-                  contato@maisbelas.com.br
+                  contato@bembelas.com.br
                 </span>
               </li>
             </ul>
@@ -112,7 +120,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-primary-foreground/50 text-sm">
-              © {currentYear} Mais Belas. Todos os direitos reservados.
+              © {currentYear} Bem Belas. Todos os direitos reservados.
             </p>
             <div className="flex gap-6">
               <a

@@ -1,0 +1,93 @@
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Sparkles } from "lucide-react";
+import heroImage from "@/assets/hero-image.jpg";
+
+const Hero = () => {
+  return (
+    <section
+      id="inicio"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img
+          src={heroImage}
+          alt="Tratamento de estética"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-transparent" />
+      </div>
+
+      {/* Content */}
+      <div className="container mx-auto px-4 relative z-10 pt-20">
+        <div className="max-w-2xl">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6 animate-fade-up">
+            <Sparkles className="w-4 h-4" />
+            <span className="text-sm font-medium">
+              Excelência em estética
+            </span>
+          </div>
+
+          {/* Headline */}
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium text-foreground leading-tight mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+            Realce sua{" "}
+            <span className="text-primary">beleza natural</span>{" "}
+            com cuidado especializado
+          </h1>
+
+          {/* Subheadline */}
+          <p
+            className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl animate-fade-up"
+            style={{ animationDelay: "0.2s" }}
+          >
+            Tratamentos personalizados com tecnologia de ponta e profissionais
+            certificados. Descubra o melhor da estética avançada.
+          </p>
+
+          {/* CTAs */}
+          <div
+            className="flex flex-col sm:flex-row gap-4 animate-fade-up"
+            style={{ animationDelay: "0.3s" }}
+          >
+            <Button variant="hero" size="xl" asChild>
+              <a href="#contato" className="gap-2">
+                Agende sua Avaliação
+                <ArrowRight className="w-5 h-5" />
+              </a>
+            </Button>
+            <Button variant="hero-outline" size="xl" asChild>
+              <a href="#servicos">Nossos Serviços</a>
+            </Button>
+          </div>
+
+          {/* Trust badges */}
+          <div
+            className="mt-12 flex flex-wrap gap-8 items-center animate-fade-up"
+            style={{ animationDelay: "0.4s" }}
+          >
+            <div className="text-center">
+              <p className="text-3xl font-serif font-semibold text-primary">+5000</p>
+              <p className="text-sm text-muted-foreground">Clientes satisfeitas</p>
+            </div>
+            <div className="w-px h-12 bg-border hidden sm:block" />
+            <div className="text-center">
+              <p className="text-3xl font-serif font-semibold text-primary">10+</p>
+              <p className="text-sm text-muted-foreground">Anos de experiência</p>
+            </div>
+            <div className="w-px h-12 bg-border hidden sm:block" />
+            <div className="text-center">
+              <p className="text-3xl font-serif font-semibold text-primary">50+</p>
+              <p className="text-sm text-muted-foreground">Tratamentos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Decorative element */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
+    </section>
+  );
+};
+
+export default Hero;

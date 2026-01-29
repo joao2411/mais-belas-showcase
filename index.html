@@ -1,26 +1,68 @@
-<!doctype html>
-<html lang="en">
-  <head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
     <meta charset="UTF-8" />
+    <title>Jéssica Gilliany Estética</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>Lovable App</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
 
-    <!-- TODO: Update og:title to match your application name -->
-    <meta property="og:title" content="Lovable App" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+<body>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+    <header class="header">
+        <h1>Jéssica Gilliany Estética</h1>
+        <nav>
+            <a href="#servicos">Serviços</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <section class="hero">
+        <h2>Realce sua beleza com cuidado e profissionalismo</h2>
+        <p>Tratamentos estéticos modernos e personalizados</p>
+    </section>
+
+    <section id="servicos" class="section">
+        <h3>Serviços</h3>
+        <div class="cards">
+            <div class="card">Limpeza de pele</div>
+            <div class="card">Hidratação facial</div>
+            <div class="card">Estética corporal</div>
+            <div class="card">Procedimentos faciais</div>
+        </div>
+    </section>
+
+    <section id="sobre" class="section light">
+        <h3>Sobre a clínica</h3>
+        <p>
+            Especializada em estética e bem-estar, oferecendo atendimento humanizado
+            e tratamentos modernos com foco em resultados naturais.
+        </p>
+    </section>
+
+    <section id="contato" class="section">
+        <h3>Contato</h3>
+
+        <a class="whatsapp" href="https://wa.me/5561999998888?text=Olá%20gostaria%20de%20agendar%20um%20horário"
+            target="_blank">
+            Falar no WhatsApp
+        </a>
+
+        <form action="https://formsubmit.co/jessicagillianyestetica@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Nome" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <textarea name="message" placeholder="Mensagem" required></textarea>
+            <button type="submit">Enviar mensagem</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 Jéssica Gilliany Estética</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
 </html>

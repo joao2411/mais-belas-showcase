@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
-import heroImage from "@/assets/hero-image.jpg";
+import heroImage from "@/assets/hero-body.jpg";
 import logo from "@/assets/logo-bem-belas.png";
 
 const Hero = () => {
@@ -41,9 +41,9 @@ const Hero = () => {
 
           {/* Headline */}
           <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium text-foreground leading-tight mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            Realce sua{" "}
-            <span className="text-primary">beleza natural</span>{" "}
-            com cuidado especializado
+            Conquiste o{" "}
+            <span className="text-primary">corpo dos seus sonhos</span>{" "}
+            com tecnologia avançada
           </h1>
 
           {/* Subheadline */}
@@ -51,8 +51,8 @@ const Hero = () => {
             className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl animate-fade-up"
             style={{ animationDelay: "0.2s" }}
           >
-            Tratamentos personalizados com tecnologia de ponta e profissionais
-            certificados. Descubra o melhor da estética avançada.
+            Especialistas em emagrecimento corporal e estética facial. 
+            Tratamentos personalizados com resultados comprovados.
           </p>
 
           {/* CTAs */}

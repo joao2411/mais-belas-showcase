@@ -1,32 +1,32 @@
 import { ArrowRight } from "lucide-react";
-import serviceFacial from "@/assets/service-facial.jpg";
-import serviceBody from "@/assets/service-body.jpg";
-import serviceLaser from "@/assets/service-laser.jpg";
+import serviceCriolipolise from "@/assets/service-criolipolise.jpg";
+import serviceSoroterapia from "@/assets/service-soroterapia.jpg";
+import serviceHarmonizacao from "@/assets/service-harmonizacao.jpg";
 
 const services = [
   {
     id: 1,
-    title: "Tratamentos Faciais",
+    title: "Criolipólise",
     description:
-      "Limpeza de pele, peelings, microagulhamento, harmonização facial e muito mais para uma pele radiante.",
-    image: serviceFacial,
-    treatments: ["Limpeza de Pele", "Peeling", "Microagulhamento", "Botox"],
+      "Tecnologia de congelamento de gordura localizada que elimina células de gordura de forma definitiva e não invasiva.",
+    image: serviceCriolipolise,
+    treatments: ["Abdômen", "Flancos", "Costas", "Braços"],
   },
   {
     id: 2,
-    title: "Tratamentos Corporais",
+    title: "Enzimas & Lipo Detox",
     description:
-      "Modeladores de silhueta, drenagem linfática, massagens e procedimentos para o corpo dos seus sonhos.",
-    image: serviceBody,
-    treatments: ["Criolipólise", "Drenagem", "Radiofrequência", "Massagem"],
+      "Enzimas para gordura localizada e Lipo Detox com injeções semanais para desinflamar o organismo e acelerar resultados.",
+    image: serviceSoroterapia,
+    treatments: ["Enzimas Lipolíticas", "Lipo Detox", "Desintoxicação", "Anti-inflamatório"],
   },
   {
     id: 3,
-    title: "Laser & Tecnologia",
+    title: "Soroterapia & Harmonização",
     description:
-      "Depilação a laser, rejuvenescimento, remoção de manchas e tratamentos com equipamentos de última geração.",
-    image: serviceLaser,
-    treatments: ["Depilação Laser", "Fototerapia", "IPL", "LED Therapy"],
+      "Soroterapia com vitaminas e minerais para revitalização, além de harmonização corporal e facial para realçar sua beleza.",
+    image: serviceHarmonizacao,
+    treatments: ["Soroterapia", "Harmonização Facial", "Harmonização Corporal", "Revitalização"],
   },
 ];
 
@@ -40,11 +40,11 @@ const Services = () => {
             Nossos Serviços
           </span>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mt-4 mb-6">
-            Tratamentos exclusivos para você
+            Tratamentos para <span className="text-primary">emagrecimento</span> e beleza
           </h2>
           <p className="text-muted-foreground text-lg">
-            Oferecemos uma ampla gama de tratamentos estéticos com tecnologia
-            avançada e profissionais altamente qualificados.
+            Especialistas em emagrecimento corporal com tecnologias avançadas
+            e profissionais altamente qualificados.
           </p>
         </div>
 

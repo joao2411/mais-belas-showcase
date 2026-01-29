@@ -68,11 +68,11 @@ const Footer = () => {
             <h4 className="font-serif text-lg font-medium mb-4">Serviços</h4>
             <ul className="space-y-3">
               {[
-                "Tratamentos Faciais",
-                "Tratamentos Corporais",
-                "Depilação a Laser",
-                "Harmonização Facial",
-                "Limpeza de Pele",
+                "Criolipólise",
+                "Enzimas para Gordura",
+                "Lipo Detox",
+                "Soroterapia",
+                "Harmonização",
               ].map((service) => (
                 <li key={service}>
                   <a
@@ -93,15 +93,15 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                 <span className="text-primary-foreground/70 text-sm">
-                  Av. Paulista, 1234 - Sala 501
+                  DF Plaza – Torre A, Sala 2411
                   <br />
-                  São Paulo - SP
+                  Águas Claras, Brasília/DF
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
                 <span className="text-primary-foreground/70 text-sm">
-                  (11) 99999-9999
+                  (61) 9674-8565
                 </span>
               </li>
               <li className="flex items-center gap-3">

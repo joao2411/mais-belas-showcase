@@ -150,11 +150,11 @@ const Contact = () => {
                 <div>
                   <h4 className="font-medium text-foreground mb-1">Endereço</h4>
                   <p className="text-muted-foreground text-sm">
-                    Av. Paulista, 1234 - Sala 501
+                    DF Plaza – Torre A, Sala 2411
                     <br />
-                    Bela Vista, São Paulo - SP
+                    Águas Claras, Brasília/DF
                     <br />
-                    CEP: 01310-100
+                    CEP: 71919-540
                   </p>
                 </div>
               </div>
@@ -164,11 +164,9 @@ const Contact = () => {
                   <Phone className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-medium text-foreground mb-1">Telefone</h4>
+                  <h4 className="font-medium text-foreground mb-1">Telefone / WhatsApp</h4>
                   <p className="text-muted-foreground text-sm">
-                    (11) 3456-7890
-                    <br />
-                    (11) 99999-9999 (WhatsApp)
+                    (61) 9674-8565
                   </p>
                 </div>
               </div>

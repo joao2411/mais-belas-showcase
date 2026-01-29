@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import serviceCriolipolise from "@/assets/service-criolipolise.jpg";
 import serviceSoroterapia from "@/assets/service-soroterapia.jpg";
 import serviceHarmonizacao from "@/assets/service-harmonizacao.jpg";
+import serviceEnzimas from "@/assets/service-body.jpg";
 
 const services = [
   {
@@ -17,16 +18,24 @@ const services = [
     title: "Enzimas & Lipo Detox",
     description:
       "Enzimas para gordura localizada e Lipo Detox com injeções semanais para desinflamar o organismo e acelerar resultados.",
-    image: serviceSoroterapia,
+    image: serviceEnzimas,
     treatments: ["Enzimas Lipolíticas", "Lipo Detox", "Desintoxicação", "Anti-inflamatório"],
   },
   {
     id: 3,
-    title: "Soroterapia & Harmonização",
+    title: "Soroterapia",
     description:
-      "Soroterapia com vitaminas e minerais para revitalização, além de harmonização corporal e facial para realçar sua beleza.",
+      "Infusão intravenosa de vitaminas, minerais e antioxidantes para revitalização do organismo, aumento de energia e fortalecimento da imunidade.",
+    image: serviceSoroterapia,
+    treatments: ["Vitaminas", "Minerais", "Antioxidantes", "Imunidade"],
+  },
+  {
+    id: 4,
+    title: "Harmonização",
+    description:
+      "Procedimentos estéticos para realçar a beleza natural do rosto e corpo, com técnicas modernas e resultados naturais.",
     image: serviceHarmonizacao,
-    treatments: ["Soroterapia", "Harmonização Facial", "Harmonização Corporal", "Revitalização"],
+    treatments: ["Harmonização Facial", "Harmonização Corporal", "Bioestimuladores", "Preenchimento"],
   },
 ];
 

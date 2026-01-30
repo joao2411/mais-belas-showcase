@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 import serviceCriolipolise from "@/assets/service-criolipolise.jpg";
 import serviceSoroterapia from "@/assets/service-soroterapia.jpg";
 import serviceHarmonizacao from "@/assets/service-harmonizacao.jpg";
-import serviceEnzimas from "@/assets/service-body.jpg";
+import serviceEnzimas from "@/assets/service-enzimas.jpg";
 
 const services = [
   {
@@ -23,19 +23,19 @@ const services = [
   },
   {
     id: 3,
-    title: "Soroterapia",
-    description:
-      "Infusão intravenosa de vitaminas, minerais e antioxidantes para revitalização do organismo, aumento de energia e fortalecimento da imunidade.",
-    image: serviceSoroterapia,
-    treatments: ["Vitaminas", "Minerais", "Antioxidantes", "Imunidade"],
-  },
-  {
-    id: 4,
     title: "Harmonização",
     description:
       "Procedimentos estéticos para realçar a beleza natural do rosto e corpo, com técnicas modernas e resultados naturais.",
     image: serviceHarmonizacao,
     treatments: ["Harmonização Facial", "Harmonização Corporal", "Bioestimuladores", "Preenchimento"],
+  },
+  {
+    id: 4,
+    title: "Soroterapia",
+    description:
+      "Infusão intravenosa de vitaminas, minerais e antioxidantes para revitalização do organismo, aumento de energia e fortalecimento da imunidade.",
+    image: serviceSoroterapia,
+    treatments: ["Vitaminas", "Minerais", "Antioxidantes", "Imunidade"],
   },
 ];
 

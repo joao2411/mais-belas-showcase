@@ -1,6 +1,8 @@
 import { MapPin, Phone, Clock, Mail, MessageCircle, Instagram } from "lucide-react";
 
 const Contact = () => {
+  const instagramUrl = "https://www.instagram.com/oficialbembelas/";
+
   return (
     <section id="contato" className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-4">
@@ -86,9 +88,13 @@ const Contact = () => {
               </div>
 
               <a
-                href="https://www.instagram.com/oficialbembelas/"
+                href={instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(instagramUrl, "_blank", "noopener,noreferrer");
+                }}
                 className="flex items-start gap-4 p-6 bg-secondary/50 rounded-xl hover:bg-secondary/70 transition-colors"
               >
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">

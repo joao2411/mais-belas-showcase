@@ -58,7 +58,7 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* CTA Button */}
+          {/* Phone */}
           <div className="hidden lg:flex items-center gap-4">
             <a
               href="tel:+5561999674856"
@@ -67,9 +67,6 @@ const Header = () => {
               <Phone className="w-4 h-4" />
               (61) 99674-8565
             </a>
-            <Button variant="hero" size="lg" asChild>
-              <a href="#contato">Agendar</a>
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -100,9 +97,6 @@ const Header = () => {
                   {link.label}
                 </a>
               ))}
-              <Button variant="hero" size="lg" className="mt-4" asChild>
-                <a href="#contato">Agendar Consulta</a>
-              </Button>
             </nav>
           </div>
         )}

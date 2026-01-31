@@ -6,7 +6,7 @@ const testimonials = [
     name: "Carolina Mendes",
     role: "Empresária",
     content:
-      "A Mais Belas superou todas as minhas expectativas! O tratamento facial que fiz rejuvenesceu minha pele de uma forma incrível. Equipe maravilhosa e ambiente impecável.",
+      "A Bem Belas superou todas as minhas expectativas! O tratamento facial que fiz rejuvenesceu minha pele de uma forma incrível. Equipe maravilhosa e ambiente impecável.",
     rating: 5,
   },
   {

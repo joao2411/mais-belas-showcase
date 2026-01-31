@@ -1,32 +1,6 @@
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Clock, Mail, Send, MessageCircle } from "lucide-react";
+import { MapPin, Phone, Clock, Mail, MessageCircle } from "lucide-react";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    const subject = encodeURIComponent(`Contato do site - ${formData.name}`);
-    const body = encodeURIComponent(
-      `Nome: ${formData.name}\nE-mail: ${formData.email}\nTelefone: ${formData.phone}\n\nMensagem:\n${formData.message}`
-    );
-    
-    window.location.href = `mailto:jessicagillianyestetica@gmail.com?subject=${subject}&body=${body}`;
-  };
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
   return (
     <section id="contato" className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-4">
@@ -44,99 +18,10 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          {/* Contact Form */}
-          <div className="bg-card p-8 md:p-10 rounded-2xl shadow-card animate-fade-up">
-            <h3 className="font-serif text-2xl font-medium text-foreground mb-6">
-              Envie sua mensagem
-            </h3>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label
-                  htmlFor="name"
-                  className="block text-sm font-medium text-foreground mb-2"
-                >
-                  Nome completo
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
-                  placeholder="Seu nome"
-                />
-              </div>
-
-              <div className="grid sm:grid-cols-2 gap-4">
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium text-foreground mb-2"
-                  >
-                    E-mail
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
-                    placeholder="seu@email.com"
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="phone"
-                    className="block text-sm font-medium text-foreground mb-2"
-                  >
-                    Telefone
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
-                    placeholder="(11) 99999-9999"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium text-foreground mb-2"
-                >
-                  Mensagem
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  rows={4}
-                  className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none"
-                  placeholder="Conte-nos como podemos ajudar..."
-                />
-              </div>
-
-              <Button type="submit" variant="hero" size="lg" className="w-full">
-                <Send className="w-4 h-4 mr-2" />
-                Enviar Mensagem
-              </Button>
-            </form>
-          </div>
-
+        <div className="max-w-2xl mx-auto">
           {/* Contact Info */}
-          <div className="space-y-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            <div>
+          <div className="space-y-8 animate-fade-up">
+            <div className="text-center">
               <h3 className="font-serif text-2xl font-medium text-foreground mb-6">
                 Informações de contato
               </h3>
@@ -147,7 +32,7 @@ const Contact = () => {
             </div>
 
             {/* Contact Cards */}
-            <div className="space-y-4">
+            <div className="grid sm:grid-cols-2 gap-4">
               <div className="flex items-start gap-4 p-6 bg-secondary/50 rounded-xl">
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
                   <MapPin className="w-5 h-5 text-primary" />
@@ -199,18 +84,18 @@ const Contact = () => {
                   </p>
                 </div>
               </div>
-
-              {/* WhatsApp Button */}
-              <a
-                href="https://wa.me/5561996748565"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-3 p-6 bg-[#25D366] hover:bg-[#128C7E] text-white rounded-xl transition-all duration-300 hover:scale-[1.02]"
-              >
-                <MessageCircle className="w-6 h-6" />
-                <span className="font-medium text-lg">Fale conosco pelo WhatsApp</span>
-              </a>
             </div>
+
+            {/* WhatsApp Button */}
+            <a
+              href="https://wa.me/5561996748565"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-3 p-6 bg-[#25D366] hover:bg-[#128C7E] text-white rounded-xl transition-all duration-300 hover:scale-[1.02]"
+            >
+              <MessageCircle className="w-6 h-6" />
+              <span className="font-medium text-lg">Fale conosco pelo WhatsApp</span>
+            </a>
           </div>
         </div>
       </div>

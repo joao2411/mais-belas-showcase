@@ -1,19 +1,48 @@
+import { useState, useRef } from "react";
+import { Play } from "lucide-react";
+import soroterapiaVideo from "@/assets/soroterapia.mp4";
+
 const SoroterapiaVideo = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const handlePlay = () => {
+    if (videoRef.current) {
+      videoRef.current.play();
+      setIsPlaying(true);
+    }
+  };
+
   return (
     <section className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Video */}
-          <div className="relative rounded-2xl overflow-hidden shadow-elevated">
+          <div className="relative rounded-2xl overflow-hidden shadow-elevated aspect-video bg-muted">
             <video
-              className="w-full h-auto"
-              controls
-              poster="/videos/soroterapia-poster.jpg"
+              ref={videoRef}
+              className="w-full h-full object-cover"
+              controls={isPlaying}
+              playsInline
+              onPlay={() => setIsPlaying(true)}
               preload="metadata"
             >
-              <source src="/videos/soroterapia.mp4" type="video/mp4" />
+              <source src={soroterapiaVideo} type="video/mp4" />
               Seu navegador não suporta vídeos.
             </video>
+            
+            {/* Play Button Overlay */}
+            {!isPlaying && (
+              <button
+                onClick={handlePlay}
+                className="absolute inset-0 flex items-center justify-center bg-foreground/20 hover:bg-foreground/30 transition-colors cursor-pointer group"
+                aria-label="Reproduzir vídeo"
+              >
+                <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
+                  <Play className="w-8 h-8 text-primary-foreground ml-1" fill="currentColor" />
+                </div>
+              </button>
+            )}
           </div>
 
           {/* Content */}

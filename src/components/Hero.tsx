@@ -66,8 +66,17 @@ const Hero = () => {
                 Agendar pelo WhatsApp
               </a>
             </Button>
-            <Button variant="hero-outline" size="xl" asChild>
-              <a href="#servicos">Nossos Serviços</a>
+            <Button 
+              variant="hero-outline" 
+              size="xl" 
+              onClick={() => {
+                const element = document.getElementById("servicos");
+                if (element) {
+                  element.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+            >
+              Nossos Serviços
             </Button>
           </div>
 

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Clock, Mail, Send } from "lucide-react";
+import { MapPin, Phone, Clock, Mail, Send, MessageCircle } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -12,8 +12,13 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Mensagem enviada com sucesso! Entraremos em contato em breve.");
-    setFormData({ name: "", email: "", phone: "", message: "" });
+    
+    const subject = encodeURIComponent(`Contato do site - ${formData.name}`);
+    const body = encodeURIComponent(
+      `Nome: ${formData.name}\nE-mail: ${formData.email}\nTelefone: ${formData.phone}\n\nMensagem:\n${formData.message}`
+    );
+    
+    window.location.href = `mailto:jessicagillianyestetica@gmail.com?subject=${subject}&body=${body}`;
   };
 
   const handleChange = (
@@ -166,7 +171,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-medium text-foreground mb-1">Telefone / WhatsApp</h4>
                   <p className="text-muted-foreground text-sm">
-                    (61) 9674-8565
+                    (61) 99674-8565
                   </p>
                 </div>
               </div>
@@ -178,7 +183,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-medium text-foreground mb-1">E-mail</h4>
                   <p className="text-muted-foreground text-sm">
-                    contato@bembelas.com.br
+                    jessicagillianyestetica@gmail.com
                   </p>
                 </div>
               </div>
@@ -190,12 +195,21 @@ const Contact = () => {
                 <div>
                   <h4 className="font-medium text-foreground mb-1">Horário</h4>
                   <p className="text-muted-foreground text-sm">
-                    Segunda a Sexta: 9h às 20h
-                    <br />
-                    Sábado: 9h às 16h
+                    Segunda a Sexta: 9h às 18h
                   </p>
                 </div>
               </div>
+
+              {/* WhatsApp Button */}
+              <a
+                href="https://wa.me/5561996748565"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-3 p-6 bg-[#25D366] hover:bg-[#128C7E] text-white rounded-xl transition-all duration-300 hover:scale-[1.02]"
+              >
+                <MessageCircle className="w-6 h-6" />
+                <span className="font-medium text-lg">Fale conosco pelo WhatsApp</span>
+              </a>
             </div>
           </div>
         </div>

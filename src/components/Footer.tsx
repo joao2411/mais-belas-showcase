@@ -101,13 +101,13 @@ const Footer = () => {
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
                 <span className="text-primary-foreground/70 text-sm">
-                  (61) 9674-8565
+                  (61) 99674-8565
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
                 <span className="text-primary-foreground/70 text-sm">
-                  contato@bembelas.com.br
+                  jessicagillianyestetica@gmail.com
                 </span>
               </li>
             </ul>

@@ -18,7 +18,7 @@ const SoroterapiaVideo = () => {
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Video */}
-          <div className="relative rounded-2xl overflow-hidden shadow-elevated aspect-video bg-muted">
+          <div className="relative rounded-2xl overflow-hidden shadow-elevated aspect-[9/16] max-h-[70vh] mx-auto bg-muted">
             <video
               ref={videoRef}
               className="w-full h-full object-cover"

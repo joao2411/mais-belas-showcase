@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logoMonogram from "@/assets/logo-monogram.png";
 
@@ -58,15 +58,21 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Phone */}
+          {/* Phone & WhatsApp */}
           <div className="hidden lg:flex items-center gap-4">
             <a
-              href="tel:+5561999674856"
+              href="tel:+5561996748565"
               className="flex items-center gap-2 text-sm text-foreground/70 hover:text-primary transition-colors"
             >
               <Phone className="w-4 h-4" />
               (61) 99674-8565
             </a>
+            <Button variant="hero" size="lg" asChild>
+              <a href="https://wa.me/5561996748565" target="_blank" rel="noopener noreferrer" className="gap-2">
+                <MessageCircle className="w-4 h-4" />
+                Agendar
+              </a>
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -97,6 +103,12 @@ const Header = () => {
                   {link.label}
                 </a>
               ))}
+              <Button variant="hero" size="lg" className="mt-4" asChild>
+                <a href="https://wa.me/5561996748565" target="_blank" rel="noopener noreferrer" className="gap-2">
+                  <MessageCircle className="w-4 h-4" />
+                  Agendar
+                </a>
+              </Button>
             </nav>
           </div>
         )}

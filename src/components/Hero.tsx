@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Sparkles } from "lucide-react";
+import { Sparkles, MessageCircle } from "lucide-react";
 import heroImage from "@/assets/hero-body.jpg";
 import logo from "@/assets/logo-bem-belas.png";
 
@@ -60,6 +60,12 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4 animate-fade-up"
             style={{ animationDelay: "0.3s" }}
           >
+            <Button variant="hero" size="xl" asChild>
+              <a href="https://wa.me/5561996748565" target="_blank" rel="noopener noreferrer" className="gap-2">
+                <MessageCircle className="w-5 h-5" />
+                Agendar pelo WhatsApp
+              </a>
+            </Button>
             <Button variant="hero-outline" size="xl" asChild>
               <a href="#servicos">Nossos Serviços</a>
             </Button>

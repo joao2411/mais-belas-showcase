@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { Play } from "lucide-react";
+import { Play, MessageCircle } from "lucide-react";
 import soroterapiaVideo from "@/assets/soroterapia.mp4";
 
 const SoroterapiaVideo = () => {
@@ -76,6 +76,15 @@ const SoroterapiaVideo = () => {
                 Resultados visíveis em poucas sessões
               </li>
             </ul>
+            <a
+              href="https://wa.me/5561996748565"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium hover:bg-primary/90 transition-colors"
+            >
+              <MessageCircle className="w-5 h-5" />
+              Agendar pelo WhatsApp
+            </a>
           </div>
         </div>
       </div>

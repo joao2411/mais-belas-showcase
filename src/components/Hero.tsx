@@ -82,12 +82,12 @@ const Hero = () => {
             </div>
             <div className="w-px h-12 bg-border hidden sm:block" />
             <div className="text-center">
-              <p className="text-3xl font-serif font-semibold text-primary">10+</p>
+              <p className="text-3xl font-serif font-semibold text-primary">+10</p>
               <p className="text-sm text-muted-foreground">Anos de experiência</p>
             </div>
             <div className="w-px h-12 bg-border hidden sm:block" />
             <div className="text-center">
-              <p className="text-3xl font-serif font-semibold text-primary">50+</p>
+              <p className="text-3xl font-serif font-semibold text-primary">+50</p>
               <p className="text-sm text-muted-foreground">Tratamentos</p>
             </div>
           </div>

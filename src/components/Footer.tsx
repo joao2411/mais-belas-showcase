@@ -2,8 +2,7 @@ import { Instagram, Facebook, Phone, Mail, MapPin } from "lucide-react";
 import logoMonogram from "@/assets/logo-monogram.png";
 
 const Footer = () => {
-  // Usar sem "www" evita redirecionamento (alguns ambientes bloqueiam www.instagram.com)
-  const instagramUrl = "https://instagram.com/oficialbembelas/";
+  const instagramUrl = "https://www.instagram.com/oficialbembelas/";
   const currentYear = new Date().getFullYear();
 
   return (

@@ -1,8 +1,7 @@
 import { MapPin, Phone, Clock, Mail, MessageCircle, Instagram } from "lucide-react";
 
 const Contact = () => {
-  // Usar sem "www" evita redirecionamento (alguns ambientes bloqueiam www.instagram.com)
-  const instagramUrl = "https://instagram.com/oficialbembelas/";
+  const instagramUrl = "https://www.instagram.com/oficialbembelas/";
 
   return (
     <section id="contato" className="py-20 md:py-32 bg-background">

@@ -2,6 +2,7 @@ import { Instagram, Facebook, Phone, Mail, MapPin } from "lucide-react";
 import logoMonogram from "@/assets/logo-monogram.png";
 
 const Footer = () => {
+  const instagramUrl = "https://www.instagram.com/oficialbembelas/";
   const currentYear = new Date().getFullYear();
 
   return (
@@ -28,9 +29,15 @@ const Footer = () => {
             {/* Social Links */}
             <div className="flex gap-4 mt-6">
               <a
-                href="https://www.instagram.com/oficialbembelas/"
+                href={instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={(e) => {
+                  // Alguns webviews/in-app browsers normalizam o link (sem https/www).
+                  // Forçamos a abertura do URL completo informado.
+                  e.preventDefault();
+                  window.open(instagramUrl, "_blank", "noopener,noreferrer");
+                }}
                 className="w-10 h-10 bg-primary-foreground/10 rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors"
                 aria-label="Instagram"
               >
@@ -114,9 +121,13 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="https://www.instagram.com/oficialbembelas/" 
+                  href={instagramUrl}
                   target="_blank" 
                   rel="noopener noreferrer"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open(instagramUrl, "_blank", "noopener,noreferrer");
+                  }}
                   className="flex items-center gap-3 hover:text-primary transition-colors"
                 >
                   <Instagram className="w-5 h-5 text-primary shrink-0" />

@@ -1,4 +1,4 @@
-import { MapPin, Phone, Clock, Mail, MessageCircle } from "lucide-react";
+import { MapPin, Phone, Clock, Mail, MessageCircle, Instagram } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -84,6 +84,23 @@ const Contact = () => {
                   </p>
                 </div>
               </div>
+
+              <a
+                href="https://www.instagram.com/oficialbembelas/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-4 p-6 bg-secondary/50 rounded-xl hover:bg-secondary/70 transition-colors"
+              >
+                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
+                  <Instagram className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <h4 className="font-medium text-foreground mb-1">Instagram</h4>
+                  <p className="text-muted-foreground text-sm">
+                    @oficialbembelas
+                  </p>
+                </div>
+              </a>
             </div>
 
             {/* WhatsApp Button */}

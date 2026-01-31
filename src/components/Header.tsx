@@ -16,12 +16,20 @@ const Header = () => {
   }, []);
 
   const navLinks = [
-    { href: "#inicio", label: "Início" },
-    { href: "#servicos", label: "Serviços" },
-    { href: "#sobre", label: "Sobre" },
-    { href: "#depoimentos", label: "Depoimentos" },
-    { href: "#contato", label: "Contato" },
+    { href: "inicio", label: "Início" },
+    { href: "servicos", label: "Serviços" },
+    { href: "sobre", label: "Sobre" },
+    { href: "depoimentos", label: "Depoimentos" },
+    { href: "contato", label: "Contato" },
   ];
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsMobileMenuOpen(false);
+  };
 
   return (
     <header
@@ -34,7 +42,10 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#inicio" className="flex items-center gap-3">
+          <button 
+            onClick={() => scrollToSection("inicio")} 
+            className="flex items-center gap-3 cursor-pointer"
+          >
             <img 
               src={logoMonogram} 
               alt="Bem Belas" 
@@ -43,18 +54,18 @@ const Header = () => {
             <span className="font-serif text-xl md:text-2xl font-semibold text-foreground tracking-wide">
               BEM<span className="text-primary">✦</span>BELAS
             </span>
-          </a>
+          </button>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
-              <a
+              <button
                 key={link.href}
-                href={link.href}
-                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors duration-200"
+                onClick={() => scrollToSection(link.href)}
+                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors duration-200 cursor-pointer"
               >
                 {link.label}
-              </a>
+              </button>
             ))}
           </nav>
 
@@ -94,14 +105,13 @@ const Header = () => {
           <div className="lg:hidden py-4 border-t border-border animate-fade-up">
             <nav className="flex flex-col gap-4">
               {navLinks.map((link) => (
-                <a
+                <button
                   key={link.href}
-                  href={link.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-base font-medium text-foreground/80 hover:text-primary transition-colors py-2"
+                  onClick={() => scrollToSection(link.href)}
+                  className="text-base font-medium text-foreground/80 hover:text-primary transition-colors py-2 text-left cursor-pointer"
                 >
                   {link.label}
-                </a>
+                </button>
               ))}
               <Button variant="hero" size="lg" className="mt-4" asChild>
                 <a href="https://wa.me/5561996748565" target="_blank" rel="noopener noreferrer" className="gap-2">

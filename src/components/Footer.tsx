@@ -112,6 +112,19 @@ const Footer = () => {
                   jessicagillianyestetica@gmail.com
                 </span>
               </li>
+              <li>
+                <a 
+                  href="https://www.instagram.com/oficialbembelas/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 hover:text-primary transition-colors"
+                >
+                  <Instagram className="w-5 h-5 text-primary shrink-0" />
+                  <span className="text-primary-foreground/70 text-sm">
+                    @oficialbembelas
+                  </span>
+                </a>
+              </li>
             </ul>
           </div>
         </div>

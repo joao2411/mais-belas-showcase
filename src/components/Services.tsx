@@ -7,6 +7,14 @@ import serviceEnzimas from "@/assets/service-enzimas.jpg";
 const services = [
   {
     id: 1,
+    title: "Soroterapia",
+    description:
+      "Infusão intravenosa de vitaminas, minerais e antioxidantes para revitalização do organismo, aumento de energia e fortalecimento da imunidade.",
+    image: serviceSoroterapia,
+    treatments: ["Vitaminas", "Minerais", "Antioxidantes", "Imunidade"],
+  },
+  {
+    id: 2,
     title: "Criolipólise",
     description:
       "Tecnologia de congelamento de gordura localizada que elimina células de gordura de forma definitiva e não invasiva.",
@@ -14,7 +22,7 @@ const services = [
     treatments: ["Abdômen", "Flancos", "Costas", "Braços"],
   },
   {
-    id: 2,
+    id: 3,
     title: "Enzimas & Lipo Detox",
     description:
       "Enzimas para gordura localizada e Lipo Detox com injeções semanais para desinflamar o organismo e acelerar resultados.",
@@ -22,20 +30,12 @@ const services = [
     treatments: ["Enzimas Lipolíticas", "Lipo Detox", "Desintoxicação", "Anti-inflamatório"],
   },
   {
-    id: 3,
+    id: 4,
     title: "Harmonização",
     description:
       "Procedimentos estéticos para realçar a beleza natural do rosto e corpo, com técnicas modernas e resultados naturais.",
     image: serviceHarmonizacao,
     treatments: ["Harmonização Facial", "Harmonização Corporal", "Bioestimuladores", "Preenchimento"],
-  },
-  {
-    id: 4,
-    title: "Soroterapia",
-    description:
-      "Infusão intravenosa de vitaminas, minerais e antioxidantes para revitalização do organismo, aumento de energia e fortalecimento da imunidade.",
-    image: serviceSoroterapia,
-    treatments: ["Vitaminas", "Minerais", "Antioxidantes", "Imunidade"],
   },
 ];
 

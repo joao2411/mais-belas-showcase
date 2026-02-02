@@ -52,14 +52,9 @@ const Footer = () => {
             <h4 className="font-serif text-lg font-medium mb-4">Links Rápidos</h4>
             <ul className="space-y-3">
               {["Início", "Serviços", "Sobre", "Depoimentos", "Contato"].map(
-                (link) => (
-                  <li key={link}>
-                    <a
-                      href={`#${link.toLowerCase()}`}
-                      className="text-primary-foreground/70 hover:text-primary transition-colors text-sm"
-                    >
-                      {link}
-                    </a>
+                (item) => (
+                  <li key={item} className="text-primary-foreground/70 text-sm">
+                    {item}
                   </li>
                 )
               )}
@@ -77,13 +72,8 @@ const Footer = () => {
                 "Soroterapia",
                 "Harmonização",
               ].map((service) => (
-                <li key={service}>
-                  <a
-                    href="#servicos"
-                    className="text-primary-foreground/70 hover:text-primary transition-colors text-sm"
-                  >
-                    {service}
-                  </a>
+                <li key={service} className="text-primary-foreground/70 text-sm">
+                  {service}
                 </li>
               ))}
             </ul>

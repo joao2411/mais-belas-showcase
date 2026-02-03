@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+
 import serviceCriolipolise from "@/assets/service-criolipolise.jpg";
 import serviceSoroterapia from "@/assets/service-soroterapia.jpg";
 import serviceHarmonizacao from "@/assets/service-harmonizacao.jpg";
@@ -94,14 +94,6 @@ const Services = () => {
                   ))}
                 </div>
 
-                {/* CTA */}
-                <a
-                  href="#contato"
-                  className="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all duration-300"
-                >
-                  Saiba mais
-                  <ArrowRight className="w-4 h-4" />
-                </a>
               </div>
             </article>
           ))}

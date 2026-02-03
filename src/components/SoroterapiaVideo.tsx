@@ -54,22 +54,24 @@ const SoroterapiaVideo = () => {
               Revitalize seu corpo de <span className="text-primary">dentro para fora</span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              A soroterapia é um tratamento que consiste na infusão intravenosa de vitaminas, 
-              minerais e antioxidantes diretamente na corrente sanguínea, garantindo absorção 
-              máxima e resultados rápidos.
+              A soroterapia é uma estratégia de cuidado integrativo que promove suporte nutricional direto ao organismo, por infusão intravenosa e/ou intramuscular, auxiliando na reposição de nutrientes essenciais, no equilíbrio dos sistemas do corpo e na recuperação da vitalidade.
             </p>
             <ul className="space-y-3 text-muted-foreground">
               <li className="flex items-center gap-3">
                 <span className="w-2 h-2 bg-primary rounded-full" />
-                Aumento de energia e disposição
+                Suporte nutricional rápido e eficiente
               </li>
               <li className="flex items-center gap-3">
                 <span className="w-2 h-2 bg-primary rounded-full" />
-                Fortalecimento do sistema imunológico
+                Melhora do bem-estar físico e mental
               </li>
               <li className="flex items-center gap-3">
                 <span className="w-2 h-2 bg-primary rounded-full" />
-                Hidratação profunda e rejuvenescimento
+                Contribui para equilíbrio imunológico e metabólico
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="w-2 h-2 bg-primary rounded-full" />
+                Protocolos personalizados para diversos objetivos
               </li>
               <li className="flex items-center gap-3">
                 <span className="w-2 h-2 bg-primary rounded-full" />

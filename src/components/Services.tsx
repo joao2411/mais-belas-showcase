@@ -9,9 +9,9 @@ const services = [
     id: 1,
     title: "Soroterapia",
     description:
-      "Infusão intravenosa de vitaminas, minerais e antioxidantes para revitalização do organismo, aumento de energia e fortalecimento da imunidade.",
+      "Nutrição injetável de vitaminas, minerais, antioxidantes e anti-inflamatórios para revitalização do organismo de forma integral, melhorando o aumento de energia, fortalecimento da imunidade, performance física, alívio de dores e fortalecimento da saúde da pele, cabelos e unhas.",
     image: serviceSoroterapia,
-    treatments: ["Vitaminas", "Minerais", "Antioxidantes", "Imunidade"],
+    treatments: ["Energia", "Imunidade", "Detox", "Anti-inflamatório", "Anti-aging", "Performance Física"],
   },
   {
     id: 2,

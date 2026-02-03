@@ -30,7 +30,7 @@ const SoroterapiaVideo = () => {
               <source src={soroterapiaVideo} type="video/mp4" />
               Seu navegador não suporta vídeos.
             </video>
-            
+
             {/* Play Button Overlay */}
             {!isPlaying && (
               <button
@@ -79,7 +79,7 @@ const SoroterapiaVideo = () => {
               </li>
             </ul>
             <a
-              href="https://wa.me/5561996748565"
+              href="https://wa.me/5561998239811"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium hover:bg-primary/90 transition-colors"

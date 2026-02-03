@@ -58,7 +58,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-medium text-foreground mb-1">Telefone / WhatsApp</h4>
                   <p className="text-muted-foreground text-sm">
-                    (61) 99674-8565
+                    (61) 99823-9811
                   </p>
                 </div>
               </div>
@@ -107,7 +107,7 @@ const Contact = () => {
 
             {/* WhatsApp Button */}
             <a
-              href="https://wa.me/5561996748565"
+              href="https://wa.me/5561998239811"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-3 p-6 bg-[#25D366] hover:bg-[#128C7E] text-white rounded-xl transition-all duration-300 hover:scale-[1.02]"

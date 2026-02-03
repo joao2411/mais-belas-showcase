@@ -1,5 +1,10 @@
+import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
+import App from "./App";
+import "./index.css";
 
-<BrowserRouter basename="/mais-belas-showcase">
+createRoot(document.getElementById("root")!).render(
+  <BrowserRouter basename="/mais-belas-showcase">
     <App />
-</BrowserRouter>
+  </BrowserRouter>
+);
